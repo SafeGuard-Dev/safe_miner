@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mineiro UI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="miner-ui">
+        <h2>Mineiro</h2>
+        <p>Nível: <span id="level">1</span></p>
+        <p>Experiência: <span id="exp">0</span>/<span id="max-exp">50</span></p>
+        <div id="exp-bar">
+            <div id="exp-fill"></div>
+        </div>
+        <button id="cancel-mining" onclick="stopMining()">[X] Cancelar Mineração</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

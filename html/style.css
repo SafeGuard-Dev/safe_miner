@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#miner-ui {
+    display: none; /* Inicialmente escondido */
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.85); /* Fundo ligeiramente mais opaco */
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombra para profundidade */
+    backdrop-filter: blur(10px); /* Efeito de desfoque para sofisticação */
+    transition: opacity 0.3s ease; /* Transição suave de opacidade */
+    opacity: 1; /* Inicialmente visível */
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 26px; /* Tamanho de fonte aumentado para título */
+    border-bottom: 2px solid #4c7aaf; /* Linha abaixo do título para destaque */
+    padding-bottom: 5px;
+    font-weight: 700; /* Fonte mais pesada para título */
+}
+
+#exp-bar {
+    width: 100%;
+    height: 10px; /* Altura da barra de experiência reduzida */
+    background-color: #333; /* Cor de fundo da barra de experiência */
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 10px; /* Espaçamento superior */
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.3); /* Sombra interna */
+}
+
+#exp-fill {
+    height: 100%;
+    background-color: #4c7aaf; /* Cor de preenchimento da barra de experiência */
+    width: 0%; /* Largura inicial zero */
+    transition: width 0.5s ease-in-out; /* Transição suave da largura */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+button#cancel-mining {
+    margin-top: 10px; /* Espaçamento superior */
+    padding: 10px 20px; /* Preenchimento do botão */
+    background-color: #4c7aaf; /* Cor de fundo vermelha */
+    color: #ffffff; /* Cor do texto */
+    border: none; /* Sem borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor do mouse */
+    font-size: 16px; /* Tamanho da fonte */
+    transition: background-color 0.3s ease; /* Transição suave da cor de fundo */
+    outline: none; /* Remove o contorno ao focar */
+}
+
+button#cancel-mining:hover {
+    background-color: #6a4caf; /* Cor de fundo mais escura ao passar o mouse */
+}
+
+button#cancel-mining:active {
+    background-color: #534caf; /* Cor de fundo ainda mais escura ao clicar */
+}
